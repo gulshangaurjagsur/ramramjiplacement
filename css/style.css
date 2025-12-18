@@ -13,7 +13,12 @@
     bottom: 45px;
     z-index: 99;
 }
-
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  overflow-x: hidden;
+}
 
 /*** Spinner ***/
 #spinner {
@@ -32,7 +37,6 @@
 
 /*** Button ***/
 .btn {
-    font-family: 'Inter', sans-serif;
     font-weight: 600;
     transition: .5s;
 }
