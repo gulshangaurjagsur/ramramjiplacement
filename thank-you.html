@@ -1,19 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script>
+  if (sessionStorage.getItem('formSubmitted') !== 'yes') {
+    // Direct access block
+    window.location.href = "/";
+  } else {
+    // One-time access
+    sessionStorage.removeItem('formSubmitted');
+  }
+</script>
   <meta charset="UTF-8">
   <title>Thank You | Ram Ram Ji Placement</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Google Ads Conversion Tag (YAHAN APNA ID/LABEL DAALO) -->
-  <!-- Event snippet for Submit lead form conversion page -->
-<script>
-  gtag('event', 'conversion', {
+  <!-- ✅ Google Ads Base Tag -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17818948467"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'AW-17818948467');
+
+    <!-- ✅ Conversion Event -->
+    gtag('event', 'conversion', {
       'send_to': 'AW-17818948467/R9m_COmC--YbEPOm3rBC',
       'value': 40.0,
       'currency': 'INR'
-  });
-</script>
+    });
+  </script>
 
 
   <style>

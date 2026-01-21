@@ -158,6 +158,16 @@
         <script src="js/waypoints.min.js"></script>
         <script src="js/owl.carousel.min.js"></script>
         <script src="js/main.js"></script>
+        <script>
+  const form = document.querySelector('form');
+
+  if (form) {
+    form.addEventListener('submit', function () {
+      sessionStorage.setItem('formSubmitted', 'yes');
+    });
+  }
+</script>
+
 </body>
 
 </html>
