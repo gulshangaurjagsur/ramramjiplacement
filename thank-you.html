@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script>
-  if (sessionStorage.getItem('formSubmitted') !== 'yes') {
-    // Direct access block
-    window.location.href = "/";
-  } else {
-    // One-time access
-    sessionStorage.removeItem('formSubmitted');
-  }
-</script>
+
+  <!-- 🔒 Block direct access -->
+  <script>
+    if (sessionStorage.getItem('formSubmitted') !== 'yes') {
+      window.location.href = "/";
+    } else {
+      sessionStorage.removeItem('formSubmitted');
+    }
+  </script>
+
   <meta charset="UTF-8">
   <title>Thank You | Ram Ram Ji Placement</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- ✅ Google Ads Base Tag -->
+  <!-- ✅ Google Ads Base + Conversion Tag -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17818948467"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -23,14 +24,13 @@
 
     gtag('config', 'AW-17818948467');
 
-    <!-- ✅ Conversion Event -->
+    // Google Ads Conversion Event
     gtag('event', 'conversion', {
       'send_to': 'AW-17818948467/R9m_COmC--YbEPOm3rBC',
       'value': 40.0,
       'currency': 'INR'
     });
   </script>
-
 
   <style>
     body {
@@ -43,7 +43,7 @@
       margin: 0;
     }
     .box {
-      background: #fff;
+      background: #ffffff;
       padding: 40px;
       text-align: center;
       border-radius: 10px;
@@ -68,14 +68,17 @@
       border-radius: 5px;
     }
   </style>
+
 </head>
 
 <body>
+
   <div class="box">
     <h1>✅ Thank You!</h1>
     <p>Your enquiry has been submitted successfully.</p>
     <p>Our team will contact you shortly.</p>
     <a href="/">Go Back to Home</a>
   </div>
+
 </body>
 </html>
